@@ -25,7 +25,7 @@ public class Funcionario {
         this.cpf = cpf;
     }
 
-    public double getSalario() {
+    public double getSalario(double v) {
         return salario;
     }
 
