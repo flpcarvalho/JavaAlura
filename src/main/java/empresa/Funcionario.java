@@ -3,7 +3,7 @@ package empresa;
 public class Funcionario {
     private String nome;
     private String cpf;
-    protected double salario;
+    private double salario;
 
 
     public double getBonificacao() {
