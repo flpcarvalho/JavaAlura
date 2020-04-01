@@ -1,24 +1,20 @@
 package empresa;
 
-public class Cliente  extends FuncionarioAutenticavel{
+public class Cliente  implements Autenticavel {
+    private AutenticacaoUtil autenticador;
 
-    private int senha;
-
-    public void setSenha(int senha) {
-        this.senha = senha;
+    public Cliente(){
+        this.autenticador = new AutenticacaoUtil();
     }
 
-    public boolean autentica(int senha) {
-        if (this.senha == senha) {
-            return true;
-        } else {
-            return false;
-        }
-
-    }
-    
     @Override
-    public double getBonificacao() {
-        return 0;
+    public void setSenha(int senha) {
+        this.autenticador.setSenha(senha);
+    }
+
+    @Override
+    public boolean autentica(int senha) {
+        this.autenticador.autentica(senha);
+        return this.autenticador.autentica(senha);
     }
 }
