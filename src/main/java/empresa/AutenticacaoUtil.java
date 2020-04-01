@@ -1,6 +1,6 @@
 package empresa;
 
-public class AutenticacaoUtil {
+public class AutenticacaoUtil implements Autenticavel {
 
     private int senha;
 
