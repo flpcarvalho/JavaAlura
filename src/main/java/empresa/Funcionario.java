@@ -2,6 +2,7 @@ package empresa;
 
 // nao pode instanciar essa classe pq é abstrata
 public abstract class Funcionario {
+
     private String nome;
     private String cpf;
     private double salario;
